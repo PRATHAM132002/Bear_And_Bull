@@ -1,6 +1,3 @@
-Certainly! Here's the updated README.md file that includes information about integrating the News API:
-
-```markdown
 # Stock Price and News Tracker
 
 This project is a React application that tracks the latest stock prices using the Alpha Vantage API and provides related news using the News API.
@@ -65,10 +62,3 @@ npm start
 
 - This project uses the [Alpha Vantage API](https://www.alphavantage.co/) to fetch stock price data.
 - This project integrates the [News API](https://newsapi.org/) to fetch relevant news articles.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-Feel free to adjust the instructions or provide additional details as needed!
