@@ -1,0 +1,52 @@
+.navbar-nav .nav-link {
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000 !important;
+}
+
+.bg-light-gray {
+    background-color: #d4d2d2;
+    
+}
+
+.card-img-top {
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.hover-card {
+    transition: transform 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.about-us-image {
+    margin-left: 250px;
+}
