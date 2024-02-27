@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+Certainly! Here's the updated README.md file that includes information about integrating the News API:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# Stock Price and News Tracker
 
-## Available Scripts
+This project is a React application that tracks the latest stock prices using the Alpha Vantage API and provides related news using the News API.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Displays the latest stock price data for a given ticker symbol.
+- Updates the data periodically to provide real-time information.
+- Utilizes the Alpha Vantage API to fetch stock price data.
+- Integrates the News API to fetch relevant news articles related to the selected stock.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository to your local machine:
 
-### `npm test`
+```
+git clone <repository-url>
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+```
+cd stock-price-news-tracker
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. Obtain API keys from [Alpha Vantage](https://www.alphavantage.co/) and [News API](https://newsapi.org/) if you haven't already.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Update the API configuration in `config/api.js` with your API keys:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```javascript
+export const api = {
+    alpha_vantage: {
+        base_url: 'https://www.alphavantage.co',
+        api_token: 'YOUR_ALPHA_VANTAGE_API_KEY_HERE'
+    },
+    news_api: {
+        base_url: 'https://newsapi.org/v2',
+        api_key: 'YOUR_NEWS_API_KEY_HERE'
+    }
+};
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+4. Access the application in your browser at `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Enter a valid stock ticker symbol in the search bar to view the latest price data and related news articles.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credits
 
-### Code Splitting
+- This project uses the [Alpha Vantage API](https://www.alphavantage.co/) to fetch stock price data.
+- This project integrates the [News API](https://newsapi.org/) to fetch relevant news articles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to adjust the instructions or provide additional details as needed!
